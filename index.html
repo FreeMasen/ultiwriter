@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="hacker">
+  <head>
+    <title>ultiwriter</title>
+    
+    
+      <link rel="icon" href="/ultiwriter/favicon.ico" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+      <meta name="description" content="Client for the Vikant Ultimate Box embroidery card reader/writer" />
+      <meta property="og:description" content="Client for the Vikant Ultimate Box embroidery card reader/writer" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ultiwriter" />
+    
+    
+    
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="/ultiwriter/oranda-v0.6.1.css" />
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-body">
+        
+          <div class="repo_banner">
+            <a href="https://github.com/FreeMasen/ultiwriter.git">
+              <div class="github-icon" aria-hidden="true"></div>
+              Check out our GitHub!
+            </a>
+          </div>
+        
+
+        <main>
+          <header>
+            
+            <h1 class="title">ultiwriter</h1>
+            
+  <nav class="nav">
+    <ul>
+      <li><a href="/ultiwriter/">Home</a></li>
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li><a href="/ultiwriter/changelog/">Changelog</a></li>
+      
+    </ul>
+  </nav>
+
+          </header>
+
+          
+
+
+    <h1><code>ultiwriter</code></h1>
+<p>Client for the Vikant Ultimate Box embroidery card reader/writer</p>
+<pre style="background-color:#263238;"><span style="color:#eeffff;">usage: vikant &lt;command&gt;
+</span><span style="color:#eeffff;">  info                         box dialect, card presence, flash ID/size
+</span><span style="color:#eeffff;">  read &lt;addr&gt; &lt;len&gt;            hexdump bytes from the card
+</span><span style="color:#eeffff;">  dump &lt;file&gt;                  read the whole card to a file
+</span><span style="color:#eeffff;">  ls [file]                    list Viking designs on the card (or in a dump)
+</span><span style="color:#eeffff;">  write &lt;addr&gt; &lt;file&gt; --yes    program bytes (target must be erased/blank)
+</span><span style="color:#eeffff;">  erase --yes                  chip-erase the card
+</span><span style="color:#eeffff;">  restore &lt;file&gt; --yes         erase, write the image, verify
+</span><span style="color:#eeffff;">
+</span><span style="color:#eeffff;">embroidery files (pes pec dst exp jef vp3 pen; format from the extension):
+</span><span style="color:#eeffff;">  show &lt;file&gt; [--cmds]         summarise a design (--cmds: every command)
+</span><span style="color:#eeffff;">  convert &lt;in&gt; &lt;out&gt;           convert between formats
+</span><span style="color:#eeffff;">  export &lt;dir&gt; [fmt] [--from dump.bin]
+</span><span style="color:#eeffff;">                               save each card design as &lt;dir&gt;/NN.&lt;fmt&gt; (default vp3)
+</span><span style="color:#eeffff;">  image &lt;out.bin&gt; &lt;file&gt;...    build a Viking card image from design files
+</span><span style="color:#eeffff;">  import &lt;file&gt;... --yes       erase the card and write these designs to it
+</span><span style="color:#eeffff;">Addresses/lengths accept decimal or 0x-hex.
+</span></pre>
+
+
+
+
+        </main>
+      </div>
+
+      <footer>
+        
+          <a href="https://github.com/FreeMasen/ultiwriter.git"><div class="github-icon" aria-hidden="true"></div></a>
+        
+        <span>
+          ultiwriter, MIT OR Apache-2.0
+        </span>
+      </footer>
+    </div>
+
+    
+    
+
+    
+
+
+  </body>
+</html>
