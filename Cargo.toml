@@ -1,0 +1,19 @@
+[package]
+name = "ultiwriter"
+version = "0.1.0"
+edition = "2024"
+description = "Client for the Vikant Ultimate Box embroidery card reader/writer"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[features]
+default = ["usb"]
+# Direct USB access to the box's FTDI bridge via nusb (pure Rust).
+usb = ["dep:nusb"]
+
+[dependencies]
+nusb = { version = "0.2.9", optional = true }
+
+[[bin]]
+name = "uw"
+required-features = ["usb"]
