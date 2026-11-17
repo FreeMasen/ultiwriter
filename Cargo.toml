@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2024"
 description = "Client for the Vikant Ultimate Box embroidery card reader/writer"
 license = "MIT OR Apache-2.0"
-publish = false
+repository = "https://github.com/FreeMasen/ultiwriter.git"
+publish = true
 
 [features]
 default = ["usb"]
@@ -17,3 +18,8 @@ nusb = { version = "0.2.9", optional = true }
 [[bin]]
 name = "uw"
 required-features = ["usb"]
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
